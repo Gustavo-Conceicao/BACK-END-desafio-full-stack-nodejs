@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import deleteUserService from "../../services/users/deleteUser.services";
 import deleteContactService from "../../services/contacts/deleteContact.services";
 
 const deleteContactController = async (
