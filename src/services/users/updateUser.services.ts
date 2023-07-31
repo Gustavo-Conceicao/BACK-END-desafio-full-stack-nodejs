@@ -15,7 +15,7 @@ const updateUserService = async (
 
   const oldData: User | null = await userRepo.findOneBy({ id: idUser });
 
-  const updateUserData: User = userRepo.create({
+  const updateUserData: User[] = userRepo.create({
     ...oldData,
     ...data,
   });
